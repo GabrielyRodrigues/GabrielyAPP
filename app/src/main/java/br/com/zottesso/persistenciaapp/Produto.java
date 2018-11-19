@@ -17,7 +17,10 @@ public class Produto extends SugarRecord {
     public Produto() {
 
     }
-
+    @Override
+    public String toString (){
+        return nome + " - valor R$ " + valor ;
+    }
     // Gets e sets para manipular os atributos privados
 
     public String getNome() {
